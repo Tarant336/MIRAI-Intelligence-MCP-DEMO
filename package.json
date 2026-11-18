@@ -1,0 +1,52 @@
+{
+  "name": "mirai-intelligence-mcp",
+  "version": "1.0.0",
+  "description": "MIRAI Intelligence & Research MCP — Autonomous Software Engineering, IoT Malware Intelligence, Exploit Research & Anti-DDoS Defense Platform",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "mirai-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "verify": "npm run typecheck && npm run test",
+    "stdio-check": "node scripts/stdio-check.mjs",
+    "inspector": "npx @modelcontextprotocol/inspector node dist/index.js",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mirai",
+    "botnet",
+    "malware-intelligence",
+    "exploit-research",
+    "vulnerability",
+    "ddos-defense",
+    "firmware-analysis",
+    "reverse-engineering",
+    "security-research"
+  ],
+  "author": "MIRAI Intelligence & Research",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0",
+    "vitest": "^2.1.0",
+    "rimraf": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
