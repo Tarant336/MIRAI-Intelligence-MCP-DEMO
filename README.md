@@ -1,3 +1,18 @@
+❤️ Support My Work
+
+If you find my projects useful, please consider supporting me with a donation.
+
+Your support helps me maintain my projects, improve existing features, and develop more useful open-source tools.
+
+Every donation, no matter how small, is greatly appreciated. Thank you for your kindness and support!
+
+💰 Donate via USDT (TRC20)
+Network: TRON (TRC20)
+Currency: USDT
+Wallet Address: TENRVUreWCFdGzceVsG6Lwr2EQtKytQQ2b
+
+Thank you for supporting open-source development! ❤️
+====================================================================================================
 # MIRAI Intelligence & Research MCP
 
 An autonomous, evidence-driven research and software-engineering platform implemented as a
