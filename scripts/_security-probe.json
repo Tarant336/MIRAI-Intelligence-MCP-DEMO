@@ -1,0 +1,237 @@
+[
+  {
+    "id": "sec-01",
+    "control": "Path confinement — repository_search path traversal",
+    "tool": "repository_search",
+    "args": {
+      "query": "root",
+      "path": "../../../../Windows"
+    },
+    "isError": true,
+    "body": "[NOT_FOUND] Path \"../../../../Windows\" was not found. Verify the identifier/path exists; use the corresponding search or listing tool first.",
+    "structured": {
+      "ok": false,
+      "engine": "software-engineering",
+      "tool": "repository_search",
+      "summary": "[NOT_FOUND] Path \"../../../../Windows\" was not found. Verify the identifier/path exists; use the corresponding search or listing tool first.",
+      "evidence": [],
+      "warnings": [],
+      "durationMs": 2,
+      "timestamp": "2026-11-18T03:58:49.999Z"
+    }
+  },
+  {
+    "id": "sec-02",
+    "control": "Path confinement — absolute path outside workspace",
+    "tool": "malware_sample_analyze",
+    "args": {
+      "filePath": "C:\\Windows\\win.ini"
+    },
+    "isError": true,
+    "body": "[PATH_OUTSIDE_WORKSPACE] Path \"C:\\Windows\\win.ini\" resolves outside the authorized workspace. Only paths under \"C:\\Users\\Administrator\\Desktop\\mcpmirai\\mcpmirai\" may be accessed. Set MIRAI_WORKSPACE to widen the boundary.",
+    "structured": {
+      "ok": false,
+      "engine": "malware-intelligence",
+      "tool": "malware_sample_analyze",
+      "summary": "[PATH_OUTSIDE_WORKSPACE] Path \"C:\\Windows\\win.ini\" resolves outside the authorized workspace. Only paths under \"C:\\Users\\Administrator\\Desktop\\mcpmirai\\mcpmirai\" may be accessed. Set MIRAI_WORKSPACE to widen the boundary.",
+      "evidence": [],
+      "warnings": [],
+      "durationMs": 0,
+      "timestamp": "2026-11-18T03:58:50.000Z"
+    }
+  },
+  {
+    "id": "sec-03",
+    "control": "Path confinement — source_generate rootPath escape",
+    "tool": "source_generate",
+    "args": {
+      "rootPath": "../_sec_escape_out",
+      "files": [
+        {
+          "relativePath": "x.txt",
+          "content": "x"
+        }
+      ]
+    },
+    "isError": true,
+    "body": "[PATH_OUTSIDE_WORKSPACE] Path \"C:\\Users\\Administrator\\Desktop\\mcpmirai\\_sec_escape_out\" resolves outside the authorized workspace. Only paths under \"C:\\Users\\Administrator\\Desktop\\mcpmirai\\mcpmirai\" may be accessed. Set MIRAI_WORKSPACE to widen the boundary.",
+    "structured": {
+      "ok": false,
+      "engine": "software-engineering",
+      "tool": "source_generate",
+      "summary": "[PATH_OUTSIDE_WORKSPACE] Path \"C:\\Users\\Administrator\\Desktop\\mcpmirai\\_sec_escape_out\" resolves outside the authorized workspace. Only paths under \"C:\\Users\\Administrator\\Desktop\\mcpmirai\\mcpmirai\" may be accessed. Set MIRAI_WORKSPACE to widen the boundary.",
+      "evidence": [],
+      "warnings": [],
+      "durationMs": 0,
+      "timestamp": "2026-11-18T03:58:50.001Z"
+    }
+  },
+  {
+    "id": "sec-04",
+    "control": "No shell interpolation — run_tests explicit command with metacharacters",
+    "tool": "run_tests",
+    "args": {
+      "path": ".",
+      "command": "echo hi; calc.exe",
+      "args": []
+    },
+    "isError": true,
+    "body": "[TOOL_MISSING] Failed to execute \"echo hi; calc.exe\": spawn echo hi; calc.exe ENOENT Verify \"echo hi; calc.exe\" is installed and executable.",
+    "structured": {
+      "ok": false,
+      "engine": "software-engineering",
+      "tool": "run_tests",
+      "summary": "[TOOL_MISSING] Failed to execute \"echo hi; calc.exe\": spawn echo hi; calc.exe ENOENT Verify \"echo hi; calc.exe\" is installed and executable.",
+      "evidence": [],
+      "warnings": [],
+      "durationMs": 3,
+      "timestamp": "2026-11-18T03:58:50.005Z"
+    }
+  },
+  {
+    "id": "sec-05",
+    "control": "Lab authorization gate — defense_test_plan without token is plan-only",
+    "tool": "defense_test_plan",
+    "args": {
+      "systemDescription": "local HTTP parser under test",
+      "scope": [
+        "buffer overflow"
+      ]
+    },
+    "isError": false,
+    "body": "### Safe anti-DDoS test plan\nNo lab token provided: this tool ONLY produces the plan. Active testing requires the configured lab authorization token (MIRAI_LAB_TOKEN) and must remain isolated, rate- and duration-bounded.\n\n**Objectives**\n- Measure detection rate per attack class.\n- Measure false-positive rate on benign traffic.\n- Measure false-negative rate (missed attacks).\n- Measure mitigation latency (time-to-mitigate).\n- Measure throughput under mitigation and CPU/memory impact.\n\n**Topology**\n- Fully isolated lab network or localhost-only loopback.\n- Generator, sensor and system-under-test on the isolated segment.\n- No path to any public or third-party network.\n\n**Allowed generators**\n- Synthetic generators configured with STRICT rate and duration caps.\n- Pre-recorded PCAP replay inside the isolated lab.\n- Localhost/loopback bounded tests only.\n\n**Prohibited**\n- Unthrottled flood generators.\n- Distributed load generators.\n- Source-address spoofing.\n- Reflection/amplification launchers.\n- Any public-target stress tooling.\n\n**Hard limits**: Traffic strictly bound to the isolated segment / loopback.; Generator rate capped at a documented maximum.; Total test duration bounded (for e",
+    "structured": {
+      "ok": true,
+      "engine": "anti-ddos",
+      "tool": "defense_test_plan",
+      "data": {
+        "plan": {
+          "systemDescription": "local HTTP parser under test",
+          "scope": [
+            "buffer overflow"
+          ],
+          "objectives": [
+            "Measure detection rate per attack class.",
+            "Measure false-positive rate on benign traffic.",
+            "Measure false-negative rate (missed attacks).",
+            "Measure mitigation latency (time-to-mitigate).",
+            "Measure throughput under mitigation and CPU/memory impact."
+          ],
+          "topology": [
+            "Fully isolated lab network or localhost-only loopback.",
+            "Generator, sensor and system-under-test on the isolated segment.",
+            "No path to any public or third-party network."
+          ],
+          "allowedGenerators": [
+            "Synthetic generators configured with STRICT rate and duration caps.",
+            "Pre-recorded PCAP replay inside the isolated lab.",
+            "Localhost/loopback bounded tests only."
+          ],
+          "prohibited": [
+            "Unthrottled flood generators.",
+            "Distributed load generators.",
+            "Source-address spoofing.",
+            "Reflection/amplification launchers.",
+            "Any public-target stress tooling."
+          ],
+          "measurements": [
+            "Detection rate = detected attacks / total attacks.",
+            "FP rate = benign sessions flagged / total benign sessions.",
+            "FN rate = 1 - detection rate.",
+            "Mitigation latency in seconds from attack start to mitigation.",
+            "Throughput (req/s, pps) under mitigation.",
+            "CPU and memory usage of the SUT and sensors."
+          ],
+          "hardLimits": [
+            "Traffic strictly bound to the isolated segment / loopback.",
+            "Generator rate capped at a documented maximum.",
+            "Total test duration bounded (for example <= 5 minutes per run).",
+            "Automatic stop on SUT resource saturation or sensor loss."
+          ],
+          "abortCriteria": [
+            "Any traffic attempting to leave the isolated segment.",
+            "SUT or sensor exceeding defined resource thresholds.",
+            "Unexpected impact on non-test systems."
+          ],
+          "authorization": "not_provided"
+        },
+        "authNote": "No lab token provided: this tool ONLY produces the plan. Active testing requires the configured lab authorization token (MIRAI_LAB_TOKEN) and must remain isolated, rate- and duration-bounded."
+      },
+      "summary": "### Safe anti-DDoS test plan\nNo lab token provided: this tool ONLY produces the plan. Active testing requires the configured lab authorization token (MIRAI_LAB_TOKEN) and must remain isolated, rate- and duration-bounded.\n\n**Objectives**\n- Measure detection rate per attack class.\n- Measure false-positive rate on benign traffic.\n- Measure false-negative rate (missed attacks).\n- Measure mitigation latency (time-to-mitigate).\n- Measure throughput under mitigation and CPU/memory impact.\n\n**Topology**\n- Fully isolated lab network or localhost-only loopback.\n- Generator, sensor and system-under-test on the isolated segment.\n- No path to any public or third-party network.\n\n**Allowed generators**\n- Synthetic generators configured with STRICT rate and duration caps.\n- Pre-recorded PCAP replay inside the isolated lab.\n- Localhost/loopback bounded tests only.\n\n**Prohibited**\n- Unthrottled flood generators.\n- Distributed load generators.\n- Source-address spoofing.\n- Reflection/amplification launchers.\n- Any public-target stress tooling.\n\n**Hard limits**: Traffic strictly bound to the isolated segment / loopback.; Generator rate capped at a documented maximum.; Total test duration bounded (for example <= 5 minutes per run).; Automatic stop on SUT resource saturation or sensor loss..\n**Abort criteria**: Any traffic attempting to leave the isolated segment.; SUT or sensor exceeding defined resource thresholds.; Unexpected impact on non-test systems..",
+      "evidence": [
+        {
+          "id": "4cb253c7-1b37-43fa-9302-8b1e5de9c283",
+          "claim": "Produced a SAFE defense test plan (authorization: not_provided).",
+          "provenance": {
+            "retrievedAt": "2026-11-18T03:58:50.006Z",
+            "source": "curated-knowledge",
+            "note": "design — Anti-DDoS test plan (§4.4)"
+          },
+          "confidence": "inferred",
+          "data": {
+            "authorization": "not_provided"
+          }
+        }
+      ],
+      "assertions": [],
+      "warnings": [],
+      "durationMs": 2,
+      "timestamp": "2026-11-18T03:58:50.008Z"
+    }
+  },
+  {
+    "id": "sec-06",
+    "control": "Path confinement — fuzzing_crash_analyze crashReportPath outside workspace",
+    "tool": "fuzzing_crash_analyze",
+    "args": {
+      "crashReportPath": "C:\\Windows\\win.ini"
+    },
+    "isError": true,
+    "body": "[PATH_OUTSIDE_WORKSPACE] Path \"C:\\Windows\\win.ini\" resolves outside the authorized workspace. Only paths under \"C:\\Users\\Administrator\\Desktop\\mcpmirai\\mcpmirai\" may be accessed. Set MIRAI_WORKSPACE to widen the boundary.",
+    "structured": {
+      "ok": false,
+      "engine": "zero-day-research",
+      "tool": "fuzzing_crash_analyze",
+      "summary": "[PATH_OUTSIDE_WORKSPACE] Path \"C:\\Windows\\win.ini\" resolves outside the authorized workspace. Only paths under \"C:\\Users\\Administrator\\Desktop\\mcpmirai\\mcpmirai\" may be accessed. Set MIRAI_WORKSPACE to widen the boundary.",
+      "evidence": [],
+      "warnings": [],
+      "durationMs": 0,
+      "timestamp": "2026-11-18T03:58:50.010Z"
+    }
+  },
+  {
+    "id": "sec-07",
+    "control": "Write guard — knowledge_update on unknown record does not silently create",
+    "tool": "knowledge_update",
+    "args": {
+      "recordId": "does-not-exist-xyz",
+      "patch": {
+        "title": "x"
+      }
+    },
+    "isError": true,
+    "body": "[NOT_FOUND] Knowledge record \"does-not-exist-xyz\" was not found. Verify the identifier/path exists; use the corresponding search or listing tool first.",
+    "structured": {
+      "ok": false,
+      "engine": "knowledge-and-evidence",
+      "tool": "knowledge_update",
+      "summary": "[NOT_FOUND] Knowledge record \"does-not-exist-xyz\" was not found. Verify the identifier/path exists; use the corresponding search or listing tool first.",
+      "evidence": [],
+      "warnings": [],
+      "durationMs": 1,
+      "timestamp": "2026-11-18T03:58:50.011Z"
+    }
+  },
+  {
+    "id": "sec-08",
+    "control": "Knowledge ingest requires provenance source (schema boundary)",
+    "tool": "knowledge_ingest",
+    "args": {
+      "category": "advisory",
+      "title": "probe"
+    },
+    "isError": true,
+    "body": "MCP error -32602: Input validation error: Invalid arguments for tool knowledge_ingest: Required at source",
+    "structured": null
+  }
+]

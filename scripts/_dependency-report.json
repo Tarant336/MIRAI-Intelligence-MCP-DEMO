@@ -1,0 +1,126 @@
+{
+  "probes": [
+    {
+      "id": "gcc",
+      "title": "GCC (GNU Compiler Collection)",
+      "status": "NOT_REQUIRED",
+      "minVersion": "5.0.0",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install the GCC toolchain (e.g. build-essential / gcc) and ensure it is on PATH.",
+      "required": false
+    },
+    {
+      "id": "clang",
+      "title": "Clang / LLVM",
+      "status": "NOT_REQUIRED",
+      "minVersion": "6.0.0",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install Clang/LLVM 6+ (e.g. apt install clang) and ensure it is on PATH.",
+      "required": false
+    },
+    {
+      "id": "aflplusplus",
+      "title": "AFL++",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Build/install AFL++ (afl-fuzz) from https://github.com/AFLplusplus/AFLplusplus and add it to PATH.",
+      "required": false
+    },
+    {
+      "id": "honggfuzz",
+      "title": "Honggfuzz",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install Honggfuzz (e.g. apt install honggfuzz) and ensure it is on PATH.",
+      "required": false
+    },
+    {
+      "id": "qemu-arm",
+      "title": "QEMU system emulator (ARM)",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install QEMU ARM system emulation (e.g. apt install qemu-system-arm) and add it to PATH.",
+      "required": false
+    },
+    {
+      "id": "qemu-mips",
+      "title": "QEMU system emulator (MIPS/MIPSel)",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install QEMU MIPS system emulation (e.g. apt install qemu-system-mips) and add it to PATH.",
+      "required": false
+    },
+    {
+      "id": "binwalk",
+      "title": "Binwalk",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install Binwalk (e.g. apt install binwalk or pip install binwalk) and add it to PATH.",
+      "required": false
+    },
+    {
+      "id": "sevenzip",
+      "title": "7-Zip",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install 7-Zip (p7zip-full / 7zip) and ensure 7z is on PATH.",
+      "required": false
+    },
+    {
+      "id": "objdump",
+      "title": "objdump",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install binutils (objdump) or llvm and ensure it is on PATH.",
+      "required": false
+    },
+    {
+      "id": "readelf",
+      "title": "readelf",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install binutils (readelf) or llvm and ensure it is on PATH.",
+      "required": false
+    },
+    {
+      "id": "strings",
+      "title": "strings",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install binutils (strings) or llvm and ensure it is on PATH.",
+      "required": false
+    },
+    {
+      "id": "nm",
+      "title": "nm",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install binutils (nm) or llvm and ensure it is on PATH.",
+      "required": false
+    },
+    {
+      "id": "radare2",
+      "title": "Radare2",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install Radare2 (or rizin) and ensure r2/radare2 is on PATH.",
+      "required": false
+    },
+    {
+      "id": "ghidra",
+      "title": "Ghidra",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install Ghidra and add its support/ directory (analyzeHeadless) to PATH.",
+      "required": false
+    },
+    {
+      "id": "git",
+      "title": "Git",
+      "status": "NOT_REQUIRED",
+      "detail": "Executable not found on PATH (not required).",
+      "installHint": "Install Git and ensure it is on PATH.",
+      "required": false
+    }
+  ]
+}

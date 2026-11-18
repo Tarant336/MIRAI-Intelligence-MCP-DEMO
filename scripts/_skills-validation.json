@@ -1,0 +1,603 @@
+﻿{
+  "root": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills",
+  "count": 38,
+  "errors": [],
+  "engineIds": [
+    "platform",
+    "knowledge-and-evidence",
+    "datasets",
+    "software-engineering",
+    "malware-intelligence",
+    "zero-day-research",
+    "exploit-intelligence",
+    "attack-methods",
+    "anti-ddos",
+    "firmware-intelligence",
+    "network-forensics",
+    "multi-agent",
+    "skills"
+  ],
+  "toolCount": 112,
+  "skills": [
+    {
+      "name": "anti-ddos-defense",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\anti-ddos-defense\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "anti-ddos",
+        "attack-methods"
+      ],
+      "tools": 10,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3601
+    },
+    {
+      "name": "api-reverse-engineering",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\api-reverse-engineering\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "software-engineering",
+        "network-forensics"
+      ],
+      "tools": 7,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3151
+    },
+    {
+      "name": "attack-source-engineering",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\attack-source-engineering\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "attack-methods",
+        "software-engineering",
+        "knowledge-and-evidence"
+      ],
+      "tools": 8,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2724
+    },
+    {
+      "name": "automated-testing",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\automated-testing\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "software-engineering"
+      ],
+      "tools": 6,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2584
+    },
+    {
+      "name": "binary-vulnerability-analysis",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\binary-vulnerability-analysis\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "zero-day-research",
+        "malware-intelligence"
+      ],
+      "tools": 2,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2398
+    },
+    {
+      "name": "build-and-debug",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\build-and-debug\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "software-engineering"
+      ],
+      "tools": 6,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2772
+    },
+    {
+      "name": "code-review",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\code-review\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "software-engineering"
+      ],
+      "tools": 5,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3060
+    },
+    {
+      "name": "evidence-based-research",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\evidence-based-research\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "knowledge-and-evidence",
+        "multi-agent",
+        "datasets"
+      ],
+      "tools": 12,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3621
+    },
+    {
+      "name": "evidence-validation-and-reconciliation",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\evidence-validation-and-reconciliation\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "knowledge-and-evidence",
+        "multi-agent"
+      ],
+      "tools": 7,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2662
+    },
+    {
+      "name": "exploit-mechanism-research",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\exploit-mechanism-research\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "exploit-intelligence",
+        "zero-day-research",
+        "knowledge-and-evidence"
+      ],
+      "tools": 7,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2858
+    },
+    {
+      "name": "exploit-source-analysis",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\exploit-source-analysis\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "exploit-intelligence",
+        "software-engineering"
+      ],
+      "tools": 9,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3506
+    },
+    {
+      "name": "exploit-source-code-analysis",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\exploit-source-code-analysis\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "exploit-intelligence",
+        "software-engineering",
+        "knowledge-and-evidence"
+      ],
+      "tools": 7,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2838
+    },
+    {
+      "name": "firmware-analysis",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\firmware-analysis\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "firmware-intelligence",
+        "malware-intelligence"
+      ],
+      "tools": 8,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3414
+    },
+    {
+      "name": "firmware-zero-day-research",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\firmware-zero-day-research\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "zero-day-research",
+        "firmware-intelligence"
+      ],
+      "tools": 2,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2388
+    },
+    {
+      "name": "fuzzing-and-crash-triage",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\fuzzing-and-crash-triage\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "zero-day-research"
+      ],
+      "tools": 4,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2796
+    },
+    {
+      "name": "malware-configuration-extraction",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\malware-configuration-extraction\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "malware-intelligence",
+        "software-engineering",
+        "knowledge-and-evidence"
+      ],
+      "tools": 5,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2634
+    },
+    {
+      "name": "malware-reverse-engineering",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\malware-reverse-engineering\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "malware-intelligence",
+        "attack-methods"
+      ],
+      "tools": 8,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3429
+    },
+    {
+      "name": "malware-source-code-analysis",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\malware-source-code-analysis\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "malware-intelligence",
+        "software-engineering",
+        "knowledge-and-evidence"
+      ],
+      "tools": 7,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2667
+    },
+    {
+      "name": "malware-variant-comparison",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\malware-variant-comparison\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "malware-intelligence",
+        "exploit-intelligence",
+        "knowledge-and-evidence"
+      ],
+      "tools": 6,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2588
+    },
+    {
+      "name": "mcp-server-development",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\mcp-server-development\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "software-engineering",
+        "platform"
+      ],
+      "tools": 10,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3380
+    },
+    {
+      "name": "memory-corruption-research",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\memory-corruption-research\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "exploit-intelligence",
+        "zero-day-research",
+        "knowledge-and-evidence"
+      ],
+      "tools": 7,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2798
+    },
+    {
+      "name": "mirai-api-c2-protocol-analysis",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\mirai-api-c2-protocol-analysis\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "malware-intelligence",
+        "network-forensics"
+      ],
+      "tools": 7,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3359
+    },
+    {
+      "name": "mirai-botnet-lineage-analysis",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\mirai-botnet-lineage-analysis\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "malware-intelligence",
+        "network-forensics",
+        "knowledge-and-evidence"
+      ],
+      "tools": 6,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2845
+    },
+    {
+      "name": "mirai-c2-protocol-research",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\mirai-c2-protocol-research\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "malware-intelligence",
+        "network-forensics",
+        "knowledge-and-evidence"
+      ],
+      "tools": 6,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2735
+    },
+    {
+      "name": "mirai-deep-source-analysis",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\mirai-deep-source-analysis\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "malware-intelligence",
+        "software-engineering",
+        "knowledge-and-evidence"
+      ],
+      "tools": 8,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3124
+    },
+    {
+      "name": "mirai-variant-intelligence",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\mirai-variant-intelligence\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "malware-intelligence",
+        "exploit-intelligence",
+        "knowledge-and-evidence"
+      ],
+      "tools": 7,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2970
+    },
+    {
+      "name": "patch-diff-and-variant-hunting",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\patch-diff-and-variant-hunting\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "exploit-intelligence",
+        "zero-day-research",
+        "firmware-intelligence",
+        "knowledge-and-evidence"
+      ],
+      "tools": 6,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2607
+    },
+    {
+      "name": "pcap-network-forensics",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\pcap-network-forensics\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "network-forensics"
+      ],
+      "tools": 9,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3198
+    },
+    {
+      "name": "protocol-reverse-engineering",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\protocol-reverse-engineering\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "network-forensics",
+        "firmware-intelligence",
+        "malware-intelligence",
+        "knowledge-and-evidence"
+      ],
+      "tools": 6,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2561
+    },
+    {
+      "name": "repository-analysis",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\repository-analysis\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "software-engineering"
+      ],
+      "tools": 7,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3115
+    },
+    {
+      "name": "research-tool-development",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\research-tool-development\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "software-engineering",
+        "knowledge-and-evidence"
+      ],
+      "tools": 8,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2488
+    },
+    {
+      "name": "software-architecture",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\software-architecture\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "software-engineering",
+        "knowledge-and-evidence"
+      ],
+      "tools": 7,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2978
+    },
+    {
+      "name": "source-vulnerability-analysis",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\source-vulnerability-analysis\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "zero-day-research",
+        "software-engineering"
+      ],
+      "tools": 4,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2797
+    },
+    {
+      "name": "static-analysis-research",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\static-analysis-research\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "zero-day-research"
+      ],
+      "tools": 3,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2495
+    },
+    {
+      "name": "threat-intelligence-correlation",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\threat-intelligence-correlation\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "knowledge-and-evidence",
+        "malware-intelligence",
+        "exploit-intelligence",
+        "network-forensics"
+      ],
+      "tools": 8,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2767
+    },
+    {
+      "name": "typescript-development",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\typescript-development\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "software-engineering"
+      ],
+      "tools": 13,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3526
+    },
+    {
+      "name": "vulnerability-root-cause-analysis",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\vulnerability-root-cause-analysis\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "zero-day-research",
+        "exploit-intelligence"
+      ],
+      "tools": 4,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 2830
+    },
+    {
+      "name": "zero-day-vulnerability-discovery",
+      "path": "C:\\Users\\sida\\Desktop\\mcpmirai\\skills\\zero-day-vulnerability-discovery\\SKILL.md",
+      "version": "1.0.0",
+      "engines": [
+        "zero-day-research",
+        "knowledge-and-evidence"
+      ],
+      "tools": 5,
+      "unknownEngines": [],
+      "unknownTools": [],
+      "btUnknown": [],
+      "missingSections": [],
+      "bytes": 3313
+    }
+  ]
+}
