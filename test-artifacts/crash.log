@@ -1,0 +1,4 @@
+Program terminated with signal SIGSEGV, Segmentation fault.
+#0  0x00007f in vulnerable_function () at vulnerable.c:42
+#1  0x00007f in parse_input () at parser.c:128
+#2  0x00007f in main () at main.c:15

@@ -1,0 +1,2 @@
+{"type": "vulnerability", "id": "kv-001", "cve": "CVE-2021-44228", "title": "Apache Log4j RCE", "description": "Remote code execution in Log4j", "tags": ["rce", "java"], "severity": "critical"}
+{"type": "vulnerability", "id": "kv-002", "cve": "CVE-2024-21887", "title": "VMware vCenter RCE", "description": "Remote code execution in vCenter", "tags": ["rce", "vmware"], "severity": "critical"}

@@ -1,0 +1,6 @@
+# Suricata detection rule — purpose: detect suspicious activity
+alert ip any any -> any any (
+  msg:"detect suspicious activity";
+  # add detection conditions (content/pcre/flow) here
+  threshold: type threshold, track by_src, count 100, seconds 10;
+  classtype:attempted-dos; sid:4325424; rev:1;)

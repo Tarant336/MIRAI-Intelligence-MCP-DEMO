@@ -1,0 +1,7 @@
+{
+  "latency_p50": 100,
+  "latency_p95": 250,
+  "latency_p99": 500,
+  "throughput_rps": 1000,
+  "error_rate": 0.01
+}

@@ -1,0 +1,6 @@
+192.168.1.100 -> 8080 login admin:admin123
+192.168.1.101 -> 8080 POST /upload payload=shell.php
+10.0.0.5 -> 443 GET /api/data
+192.168.1.100 -> 22 ssh root@192.168.1.100
+10.0.0.8 -> 53 UDP query evil.com
+192.168.1.102 -> 80 GET /wp-admin
